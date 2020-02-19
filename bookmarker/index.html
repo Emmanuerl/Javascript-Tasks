@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bookmarker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+</head>
+<body onload="fetchBookmarks()">
+    <div class="container">
+        <h4>Bookmarker</h4> <hr>
+    </div>
+    <div class="container">
+        <!-- <div class="col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-2"> -->
+            <div class="jumbotron">
+                <h3>Bookmark Your Favourite Sites</h3>
+                <form id="myForm">
+                    <div class="form-group">
+                        <label>Site Name</label>
+                        <input type="text" placeholder="Website Name" class="form-control" id="siteName">  
+                    </div>
+                    <div> 
+                        <label>Site URL</label>
+                        <input type="text" placeholder="Website URL" class="form-control" id="siteUrl">
+                    </div> 
+                    <button type="submit" class="btn btn-primary">Submit</button>               
+                </form>
+            <!-- </div> -->
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div id="bookmarksResult">
+                
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <hr>
+        <footer>
+            &copy; 2019 Emmanuel's Bookmarker
+        </footer>
+    </div>
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/main.js"></script>   
+</body>
+</html>

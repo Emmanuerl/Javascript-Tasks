@@ -1,0 +1,17 @@
+h3,label{
+    text-align: center;
+}
+hr{
+    border: 1px solid rgb(231, 228, 228);
+    border-radius: 2px;
+}
+button{
+    position: relative;
+    margin: 20px 0px 0px 40%;     
+}
+.links{
+    padding: 1px;
+}
+.links h3{
+    text-align: left;
+}
