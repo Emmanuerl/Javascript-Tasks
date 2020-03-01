@@ -1,6 +1,8 @@
 var canvas = document.getElementById('canvas');
 canvas.height = 300;
-canvas.width =300;
+canvas.width =window.innerWidth*0.5;
+
+console.log(canvas.width);
 var ctx = canvas.getContext('2d');
 function drawClock() {
    var time = new Date;
