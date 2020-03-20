@@ -40,8 +40,8 @@ function deleteBookmark(url) {
         if (bookmarks[i].url === url ) {
             bookmarks.splice(i,1);
         }
-
     }
+    localStorage.setItem('bookmarks',JSON.stringify(bookmarks));
     fetchBookmarks();
 }
 function fetchBookmarks(){
@@ -61,4 +61,6 @@ function fetchBookmarks(){
                                     '</div>'
 
     }
+    document.getElementById('siteName').value = '';
+    document.getElementById('siteUrl').value = '';
 }
