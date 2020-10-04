@@ -9,10 +9,10 @@ async function searchTerm() {
     return false;
   }
   //outputing the query
-  let query = document.createElement("div");
-  query.innerHTML = `<p> ${searchInput.value}<p>`;
-  query.classList.add("query-div");
-  output.appendChild(query);
+  let queryContentContainer = document.createElement("div");
+  queryContentContainer.innerHTML = `<p> ${searchInput.value}<p>`;
+  queryContentContainer.classList.add("query-div");
+  output.appendChild(queryContentContainer);
   searchInput.value = "";
 
   //query for the api
